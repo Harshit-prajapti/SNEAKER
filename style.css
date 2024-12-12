@@ -1,0 +1,337 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Lato", sans-serif;
+    padding: 0%;
+    margin: 0% ;
+    overflow:auto;
+    /* scrollbar-width: none; */
+}
+::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.limitedOffer{
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: solid green;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+.sliderItem{
+    width: 100vw;
+    /* height: 80vh; */
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 20px; */
+    /* margin-left: -10px; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+.slider{
+    background: url(wall.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+}
+.session{
+    left: -30px;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+}
+.prise{
+    position: absolute;
+    margin-top: 330px;
+    right: 40px;
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+#buy{
+    cursor: pointer;
+   position: absolute;
+   margin-top: 380px;
+   right: 30px;
+   font-size: 30px; 
+   background-color: black;
+   color: aliceblue;   
+   padding: 10px;
+   border-radius: 30px;
+}
+.shoes{
+    height: 350px;
+    object-fit: cover;
+}
+.Slider{
+    margin-top: 30px;
+    transition: transform 0.5s ease-in-out;
+
+}
+.scroler{
+    position: absolute;
+    height: 15px;
+    width: 100px;
+    background-color:lightgray;
+    border-radius: 20px;
+    margin-top: 430px;
+    z-index: 5;
+}
+.sliderWrapper{
+    height: 80vh;
+    width: 1100vh;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+}
+#buy:hover{
+    background-color: white;
+    color: gray;
+    border: 3px solid gray;
+    padding: 13px;
+}
+.shoes{
+    /* overflow: visible; */
+}
+.feature{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.features{
+    padding-bottom: 20px;
+    height: 45vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+
+}
+.name{
+    color: rgb(77, 37, 37);
+}
+.productDetails{
+    height: 100vh;
+    background-color: rgb(49, 153, 153);
+    margin-top: -50px;
+}
+.productImg{
+    /* position: absolute; */
+    padding-top: 0px;
+    padding-left: 150px;
+    margin-bottom: 10px;
+}
+.productName{
+    color: yellow;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: -430px;
+    margin-left: 850px;
+}
+.productPrise{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -250px;
+    margin-left: 850px;
+}
+.productDis{
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -150px;
+    margin-left: 850px;
+    color: rgb(245, 235, 235);
+}
+.colors{
+    padding: 10px;
+    position: absolute;
+    /* border: 2px solid gray; */
+    margin-top: -60px;
+    margin-left: 650px;
+    display: flex;
+}
+#white{
+    border-radius: 10%;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    cursor: pointer;
+}
+#black{
+    border-radius: 10%;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(248, 246, 246);
+    cursor: pointer;
+}
+.photos{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 15px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.photo{
+    height: 70px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 10%;
+}
+.pics{
+    height: 70px;
+    width: 70px;
+    visibility: visible;
+    cursor: pointer;
+}
+#frame{
+    padding: 30px;
+   min-height: 80vh;
+   min-width: 37vw;
+   border: 4px solid skyblue;
+   position: absolute;
+   background-color: rgb(255, 255, 255);
+   margin-top: -98vh;
+   margin-left: -150vh;
+   border-radius: 5%;
+   box-shadow:  5px 5px 20px rgb(12, 12, 12) ;
+   /* display: no; */
+   /* transition:3s; */
+   /* transform: translateX(200vh); */
+   /* animation: shift 5s 3s 1 ease-in-out;  */
+}
+@keyframes shift {
+    0%{
+        margin-left : -150vh;
+    }
+    100%{
+         margin-left: 50vh;
+    }
+}
+#buyProduct{
+    cursor: pointer;
+   position: absolute;
+   margin-top: 520px;
+   right: 35px;
+   font-size: 30px; 
+   background-color: black;
+   color: rgb(255, 255, 255);   
+   padding: 10px;
+   border-radius: 30px;
+}
+#buyProduct:hover{
+    background-color: white;
+    color: gray;
+    border: 3px solid gray;
+    padding: 13px;
+}
+#payment{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    color: rgb(82, 80, 80);
+    background-color: transparent;
+    font-size: 15px;
+}
+#paymentDiv{
+    padding: 5px;
+    /* border: 2px solid gray; */
+    margin-bottom: 35px;
+    margin-left: 20px;
+    border-bottom: 2px solid rgb(50, 113, 138);
+
+}
+#outerDiv{
+    /* border: 1px solid gray; */
+    padding: 8px;
+}
+h2{
+font-family: 'Times New Roman', Times, serif;
+}
+#cross{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -70px;
+    /* border: 1px solid red; */
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(87, 85, 85);
+    color: white;
+}
+#payDiv{
+    bottom: 15px;
+    position: absolute;
+    /* cursor: pointer; */
+    /* width: 40vw; */
+    background-color: green;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    /* border: 2px solid lime; */
+}
+#payBtn{
+    border: none;
+    color: white;
+    font-size: larger;
+    background-color: green;
+    cursor: pointer;
+    width: 37vw;
+}
+#logoImg{
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -15px;
+}
+#logo{
+    height: 60px;
+    cursor: pointer;
+    margin-right: 5px;
+}
